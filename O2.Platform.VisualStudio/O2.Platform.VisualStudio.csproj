@@ -59,24 +59,47 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FluentSharp.BCL, Version=5.1.1.0, Culture=neutral, PublicKeyToken=55a0f9bf4256d533, processorArchitecture=MSIL">
-      <HintPath>..\VisualStudio Solution Files\packages\FluentSharp.BCL.5.0.78\lib\net35\FluentSharp.BCL.dll</HintPath>
+    <Reference Include="FluentSharp.AST, Version=1.0.0.0, Culture=neutral, PublicKeyToken=087dfa3428b0a339, processorArchitecture=MSIL">
+      <HintPath>..\VS_Solutions\packages\FluentSharp.Ast.5.5.172\lib\net35\FluentSharp.AST.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="FluentSharp.CoreLib, Version=5.1.1.1, Culture=neutral, PublicKeyToken=55a0f9bf4256d533, processorArchitecture=MSIL">
-      <HintPath>..\VisualStudio Solution Files\packages\FluentSharp.CoreLib.5.0.78\lib\net35\FluentSharp.CoreLib.dll</HintPath>
+    <Reference Include="FluentSharp.CoreLib, Version=5.5.0.0, Culture=neutral, PublicKeyToken=55a0f9bf4256d533, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\VS_Solutions\packages\FluentSharp.CoreLib.5.5.172\lib\net35\FluentSharp.CoreLib.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="FluentSharp.NGit, Version=5.1.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\VisualStudio Solution Files\packages\FluentSharp.NGit.5.0.78\lib\net40\FluentSharp.NGit.dll</HintPath>
+    <Reference Include="FluentSharp.REPL, Version=5.5.0.0, Culture=neutral, PublicKeyToken=55a0f9bf4256d533, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\VS_Solutions\packages\FluentSharp.REPL.5.5.172\lib\net35\FluentSharp.REPL.exe</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="FluentSharp.REPL, Version=5.1.1.0, Culture=neutral, PublicKeyToken=55a0f9bf4256d533, processorArchitecture=MSIL">
-      <ExecutableExtension>.exe</ExecutableExtension>
-      <HintPath>..\VisualStudio Solution Files\packages\FluentSharp.REPL.5.0.78\lib\net35\FluentSharp.REPL.exe</HintPath>
+    <Reference Include="FluentSharp.SharpDevelopEditor, Version=5.5.0.0, Culture=neutral, PublicKeyToken=55a0f9bf4256d533, processorArchitecture=MSIL">
+      <HintPath>..\VS_Solutions\packages\FluentSharp.SharpDevelopEditor.5.5.172\lib\net35\FluentSharp.SharpDevelopEditor.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="FluentSharp.Roslyn, Version=5.1.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\VisualStudio Solution Files\packages\FluentSharp.Roslyn.5.0.78\lib\net40\FluentSharp.Roslyn.dll</HintPath>
+    <Reference Include="FluentSharp.Web_3_5, Version=5.5.0.0, Culture=neutral, PublicKeyToken=1439893e489faed4, processorArchitecture=MSIL">
+      <HintPath>..\VS_Solutions\packages\FluentSharp.Web_3_5.5.5.172\lib\net35\FluentSharp.Web_3_5.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="FluentSharp.WPF, Version=5.1.1.0, Culture=neutral, PublicKeyToken=55a0f9bf4256d533, processorArchitecture=MSIL">
-      <HintPath>..\VisualStudio Solution Files\packages\FluentSharp.WPF.5.0.78\lib\net40\FluentSharp.WPF.dll</HintPath>
+    <Reference Include="FluentSharp.WinForms, Version=5.5.0.0, Culture=neutral, PublicKeyToken=55a0f9bf4256d533, processorArchitecture=MSIL">
+      <HintPath>..\VS_Solutions\packages\FluentSharp.WinForms.5.5.172\lib\net35\FluentSharp.WinForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FluentSharp.WPF, Version=5.5.0.0, Culture=neutral, PublicKeyToken=55a0f9bf4256d533, processorArchitecture=MSIL">
+      <HintPath>..\VS_Solutions\packages\FluentSharp.WPF.5.5.172\lib\net40\FluentSharp.WPF.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FluentSharp.Xml, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e20c9643c6d4ac0b, processorArchitecture=MSIL">
+      <HintPath>..\VS_Solutions\packages\FluentSharp.Xml.5.5.172\lib\net35\FluentSharp.Xml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FluentSharp.Zip, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\VS_Solutions\packages\FluentSharp.Zip.5.5.172\lib\net35\FluentSharp.Zip.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ionic.Zip, Version=1.9.1.5, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <HintPath>..\VS_Solutions\packages\DotNetZip.1.0\lib\Net35\Ionic.Zip.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.VisualStudio.CoreUtility, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
@@ -94,10 +117,6 @@
       <Private>false</Private>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.Shell.Immutable.10.0" />
-    <Reference Include="O2_Platform_External_SharpDevelop, Version=5.1.1.0, Culture=neutral, PublicKeyToken=55a0f9bf4256d533, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\VisualStudio Solution Files\packages\O2.Platform.External.SharpDevelop.5.0.78\lib\net35\O2_Platform_External_SharpDevelop.dll</HintPath>
-    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
@@ -194,9 +213,6 @@
     <Compile Include="ExtensionMethods\VisualStudio_2010_ExtensionMethods_ErrorList.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ExtensionMethods\VisualStudio_2010_ExtensionMethods_IVsUIShell.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="ExtensionMethods\VisualStudio_2010_ExtensionMethods_Menus.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -226,11 +242,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VisualStudio_2010.cs" />
     <Compile Include="VisualStudio_O2_Utils.cs" />
-    <Content Include="_Nuget_Dependencies\FluentSharp.BCL.dll" />
-    <Content Include="_Nuget_Dependencies\FluentSharp.CoreLib.dll" />
-    <Content Include="_Nuget_Dependencies\FluentSharp.NGit.dll" />
-    <Content Include="_Nuget_Dependencies\FluentSharp.REPL.exe" />
-    <Content Include="_Nuget_Dependencies\O2_Platform_External_SharpDevelop.dll" />
     <Content Include="VS_Scripts\O2_Platform_Gui.cs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>

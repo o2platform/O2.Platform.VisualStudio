@@ -1,16 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using O2.Kernel;
-using O2.XRules.Database.Utils;
-using O2.DotNetWrappers.DotNet;
-using O2.DotNetWrappers.ExtensionMethods;
-using O2.External.SharpDevelop.ExtensionMethods;
-using O2.FluentSharp.REPL;
-using O2.Views.ASCX.Ascx.MainGUI;
-using System.Threading;
+﻿using System.Threading;
 using O2.FluentSharp.VisualStudio.ExtensionMethods;
+using FluentSharp.CoreLib;
+using FluentSharp.CoreLib.API;
+using FluentSharp.REPL;
+using FluentSharp.REPL.Utils;
 
 namespace O2.FluentSharp.VisualStudio
 {
@@ -104,7 +97,7 @@ namespace O2.FluentSharp.VisualStudio
                                               "EnvDTE80.dll",
                                               //needed for VS2015
                                               "Microsoft.VisualStudio.Shell.Interop.dll",
-                                              "EnvDTE80.DTE2.dll",
+                                              //"EnvDTE80.DTE2.dll",
                                               "Microsoft.VisualStudio.Shell.ViewManager.dll",
                                               //needed for WPF manipulation
                                               "WindowsFormsIntegration.dll",

@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using WPF_UserControl = System.Windows.Controls.UserControl;
-using O2.Kernel;
-using O2.DotNetWrappers.ExtensionMethods;
 using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
 //using System.ComponentModel.Design;

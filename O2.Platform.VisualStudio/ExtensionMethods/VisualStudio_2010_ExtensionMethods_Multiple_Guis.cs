@@ -1,7 +1,11 @@
 ﻿using WinForms = System.Windows.Forms;
 using EnvDTE;
 using Microsoft.VisualStudio.Shell.Interop;
-using O2.DotNetWrappers.ExtensionMethods;
+using FluentSharp.WinForms;
+using FluentSharp.WinForms.Controls;
+using FluentSharp.REPL.Controls;
+using FluentSharp.REPL;
+using FluentSharp.CoreLib;
 
 namespace O2.FluentSharp.VisualStudio.ExtensionMethods
 {
@@ -39,23 +43,23 @@ namespace O2.FluentSharp.VisualStudio.ExtensionMethods
 		}
 		
 		//O2 Guis
-		public static O2.Views.ASCX.Ascx.MainGUI.ascx_LogViewer open_LogViewer(this VisualStudio_2010 visualStudio)
+		public static ascx_LogViewer open_LogViewer(this VisualStudio_2010 visualStudio)
 		{
 			var logViewer = "O2 LogViewer".create_WinForms_Window_Float().add_LogViewer();
 			return logViewer;
 		}
-		public static O2.XRules.Database.Utils.ascx_Simple_Script_Editor open_ScriptEditor(this VisualStudio_2010 visualStudio)
+		public static ascx_Simple_Script_Editor open_ScriptEditor(this VisualStudio_2010 visualStudio)
 		{
 			return "C# REPL Script".create_WinForms_Window_Float(800, 400).add_Script(true);
 		}
-		public static O2.XRules.Database.Utils.ascx_Simple_Script_Editor open_ScriptEditor_With_VisualStudio_API(this VisualStudio_2010 visualStudio)
+		public static ascx_Simple_Script_Editor open_ScriptEditor_With_VisualStudio_API(this VisualStudio_2010 visualStudio)
 		{ 
 			var defaultCode = 
 @"var visualStudio = new VisualStudio_2010();
 return visualStudio.dte();";
 			return visualStudio.open_ScriptEditor().set_Code(defaultCode);
 		}
-		public static O2.XRules.Database.Utils.ascx_Simple_Script_Editor open_ScriptEditor_With_VisualStudio_CodeSample(this VisualStudio_2010 visualStudio)
+		public static ascx_Simple_Script_Editor open_ScriptEditor_With_VisualStudio_CodeSample(this VisualStudio_2010 visualStudio)
 		{
 			var defaultCode =
 @"//get a reference to the VisualStudio API

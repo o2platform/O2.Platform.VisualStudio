@@ -1,16 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Microsoft.VisualStudio.Shell;
-using Microsoft.VisualStudio.Shell.Interop;
 using Microsoft.VisualStudio.CommandBars;
 using EnvDTE80;
-using O2.FluentSharp.VisualStudio;
-using O2.DotNetWrappers.DotNet;
-using O2.DotNetWrappers.ExtensionMethods;
-
-
+using FluentSharp.CoreLib.API;
+using FluentSharp.CoreLib;
 
 namespace O2.FluentSharp.VisualStudio.ExtensionMethods
 {

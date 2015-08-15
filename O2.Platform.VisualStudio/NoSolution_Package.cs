@@ -6,14 +6,11 @@ using System.Runtime.InteropServices;
 using System.Diagnostics;
 using System.Windows.Forms;
 using WPF_UserControl = System.Windows.Controls.UserControl;
-using O2.Kernel;
-using O2.DotNetWrappers.ExtensionMethods;
 using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
-using System.ComponentModel.Design;
-using O2.Views.ASCX.Ascx.MainGUI;
-using O2.DotNetWrappers.DotNet;
 using System.Reflection;
+using FluentSharp.CoreLib.API;
+using FluentSharp.CoreLib;
 
 namespace O2.FluentSharp.VisualStudio
 {
@@ -29,7 +26,7 @@ namespace O2.FluentSharp.VisualStudio
         public NoSolution_Package()
         {
 			O2ConfigSettings.O2Version += "_VS2010";
-			PublicDI.config = new O2.Kernel.InterfacesBaseImpl.KO2Config();
+			PublicDI.config = new KO2Config();
 
             //open.scriptEditor();
 			//open.logViewer();			
