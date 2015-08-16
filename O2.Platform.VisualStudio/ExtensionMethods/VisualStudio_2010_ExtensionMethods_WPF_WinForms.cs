@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using Microsoft.VisualStudio.Shell;
@@ -35,6 +32,8 @@ namespace O2.FluentSharp.VisualStudio.ExtensionMethods
 		{
 			return (MainWindow)visualStudio.invokeOnThread(() => visualStudio.application().MainWindow);
 		}
+        
+
 	}
 
 	public static class VisualStudio_2010_ExtensionMethods_WinFormsIntegration

@@ -3,11 +3,8 @@ using System.Collections.Generic;
 using System.Windows.Forms;
 using System.Linq;
 using System.Text;
-using WeifenLuo.WinFormsUI.Docking;
-using O2.Kernel;
-using O2.DotNetWrappers.ExtensionMethods;
-using O2.External.SharpDevelop.ExtensionMethods;
-using O2.FluentSharp.REPL;
+using FluentSharp.CoreLib;
+using FluentSharp.REPL;
 using O2.FluentSharp.VisualStudio;
 
 
@@ -40,11 +37,11 @@ namespace O2.Platform.VisualStudio_2010_Extension
             return this;
         }        
 
-        public DockPanel openScriptsViewer()
+        /*public DockPanel openScriptsViewer()
         {                        
             var scriptsFolder = @"VS_O2_PlugIns\Create O2 Platform Menu.h2".local().parentFolder();
             return scriptsFolder.open_Script_Viewer_GUI();            
-        }                    
+        } */                   
     }
     
 }

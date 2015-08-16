@@ -14,7 +14,7 @@ namespace O2.FluentSharp.VisualStudio
     /// </summary>
     public class VisualStudio_2010
     {        
-        public const string PackageGUID = "de85ae01-f53e-464f-9466-aa9089c0ce17";//"E0640001-BDB6-4946-84C1-03A58367895A";
+        public const string PackageGUID = "0768eadb-f5ac-4294-81dd-23d651109499" ; //"de85ae01-f53e-464f-9466-aa9089c0ce17";//"E0640001-BDB6-4946-84C1-03A58367895A";
         
         public static Package               Package                 { get; set; }        
         public static ErrorListProvider     ErrorListProvider       { get; set; }        
@@ -63,7 +63,11 @@ namespace O2.FluentSharp.VisualStudio
             on_DocumentOpening = new List<Action<string, bool>>();
             on_LineChanged = new List<Action<EnvDTE.TextPoint, EnvDTE.TextPoint>>();
 			on_ActiveDocumentChange = new List<Action<EnvDTE.Document>>();
-            ToolWindowPanes = new Dictionary<WPF_UserControl, ToolWindowPane>();            
+            ToolWindowPanes = new Dictionary<WPF_UserControl, ToolWindowPane>();                
+        }
+
+        public VisualStudio_2010()
+        {        
         }
     }
 }

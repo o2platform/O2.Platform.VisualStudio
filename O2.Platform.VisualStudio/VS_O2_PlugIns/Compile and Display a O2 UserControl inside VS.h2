@@ -79,7 +79,6 @@ topPanel.insert_Above_ToolStrip()
 
 refresh(default(Document));
 return topPanel;
-//using O2.Platform.BCL.O2_Views_ASCX
 //using EnvDTE
 //using System.Reflection
 

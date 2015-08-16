@@ -1,11 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="O2.Platform.cecf722c-9999-9999-ae50-154937cbefb8" Version="6.0.1" Language="en-US" Publisher="OWASP O2 Platform" />
+    <DisplayName>VisualStudio C# REPL</DisplayName>
+    <Description xml:space="preserve">VisualStudio 2015 Extension for the which provides a real-time C# REPL for VisualStudio (based on the OWASP O2 Platform and FluentSharp API)
+      5.5.1.x - update to 5.5 version of FluentSharp
+    </Description>
+    <MoreInfo>https://github.com/o2platform/O2.Platform.VisualStudio</MoreInfo>
+    <License>Resources\Apache.2.0.license.txt</License>
+    <Icon>Resources\O2Logo.ico</Icon>
+    <PreviewImage>Resources\O2Logo.ico</PreviewImage>
+    <Tags>REPL, O2 Platform</Tags>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Version="[14.0,15.0)" Id="Microsoft.VisualStudio.Enterprise" />
+    <InstallationTarget Version="[14.0,15.0)" Id="Microsoft.VisualStudio.Pro" />
+    <InstallationTarget Version="[14.0,15.0)" Id="Microsoft.VisualStudio.Community" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+    <Dependency Id="Microsoft.VisualStudio.MPF.14.0" DisplayName="Visual Studio MPF 14.0" d:Source="Installed" Version="[14.0]" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+  </Assets>
+</PackageManifest>
+
+<!--
+<?xml version="1.0" encoding="utf-8"?>
 <Vsix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2010">
 	<Identifier Id="F886416F-3DBF-4DEE-9578-E7692FC59871">
 		<Name>VisualStudio C# REPL - O2 Platform</Name>
 		<Author>OWASP O2 Platform</Author>
-		<Version>5.0.0.1</Version>
-		<Description xml:space="preserve">VisualStudio 2010 Extension for the which provides a real-time C# REPL for VisualStudio (based on the OWASP O2 Platform and FluentSharp API)
-
+		<Version>5.5.3</Version>
+		<Description xml:space="preserve">VisualStudio 2015 Extension for the which provides a real-time C# REPL for VisualStudio (based on the OWASP O2 Platform and FluentSharp API)
+5.5.1.x - update to 5.5 version of FluentSharp
 5.0.x.x - update to 5.x version of FluentSharp
 4.4.14 - update to latest version of FluentSharp dlls</Description>
 		<Locale>1033</Locale>
@@ -19,8 +48,26 @@
 				<Edition>Premium</Edition>
 				<Edition>Pro</Edition>
 			</VisualStudio>
+      <VisualStudio Version="13.0">
+        <Edition>VSLS</Edition>
+        <Edition>Ultimate</Edition>
+        <Edition>Premium</Edition>
+        <Edition>Pro</Edition>
+      </VisualStudio>
+      <VisualStudio Version="14.0">
+        <Edition>VSLS</Edition>
+        <Edition>Ultimate</Edition>
+        <Edition>Premium</Edition>
+        <Edition>Pro</Edition>
+      </VisualStudio>
+      <VisualStudio Version="15.0">
+        <Edition>VSLS</Edition>
+        <Edition>Ultimate</Edition>
+        <Edition>Premium</Edition>
+        <Edition>Pro</Edition>
+      </VisualStudio>
 		</SupportedProducts>
-		<SupportedFrameworkRuntimeEdition MinVersion="4.0" MaxVersion="4.0" />
+		<SupportedFrameworkRuntimeEdition MinVersion="4.5"/>
 	</Identifier>
 	<References>
 		<Reference Id="Microsoft.VisualStudio.MPF" MinVersion="10.0">
@@ -32,3 +79,4 @@
 		<MefComponent>|%CurrentProject%|</MefComponent>
 	</Content>
 </Vsix>
+-->

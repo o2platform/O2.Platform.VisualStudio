@@ -70,7 +70,7 @@ visualStudio.errorList().add_Error(""I'm an Error"");
 visualStudio.errorList().add_Warning(""I'm an Warning"");					    
 
 //open a text file
-visualStudio.open_Document(""a text file"".saveWithExtension("".exe""));
+visualStudio.open_Document(""a text file"".saveWithExtension("".txt""));
 
 //open a C# file
 visualStudio.open_Document(@""VS_Scripts\O2_Platform_Gui.cs"".local());

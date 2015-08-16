@@ -11,11 +11,12 @@ replMenu.add_Menu_Button("C# REPL - VisualStudio 2010 API", () => visualStudio.o
 .add_Menu_Button("Log Viewer", () => visualStudio.open_LogViewer());
 
 var o2Menu = replMenu.add_SubMenu("O2 Platform",0);
-o2Menu	.add_Menu_Button("O2 VisualStudio PlugIns Editor", ()=> o2PlatformGui.openScriptsViewer())
-.add_Menu_Button("Development Environment", () => open.devEnvironment())
-.add_Menu_Button("O2Script: Util - O2 Available scripts", ()=> "Util - O2 Available scripts.h2".local().executeH2Script())
-.add_Menu_Button("O2Script: Main O2 Gui", () => "Main O2 Gui.h2".local().executeH2Script())
-.add_Menu_Button("Update O2 Scripts (download from GitHub)", () => O2Scripts.downloadO2Scripts());
+//o2Menu	.add_Menu_Button("O2 VisualStudio PlugIns Editor", ()=> o2PlatformGui.openScriptsViewer())
+o2Menu.add_Menu_Button("Development Environment", () => open.devEnvironment())
+	  .add_Menu_Button("O2Script: Util - O2 Available scripts", ()=> "Util - O2 Available scripts.h2".local().executeH2Script())
+	  .add_Menu_Button("O2Script: Main O2 Gui", () => "Main O2 Gui.h2".local().executeH2Script());
+
+//.add_Menu_Button("Update O2 Scripts (download from GitHub)", () => O2Scripts.downloadO2Scripts());
 
 return visualStudio;
 

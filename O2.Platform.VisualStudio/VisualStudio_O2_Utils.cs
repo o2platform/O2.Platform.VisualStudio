@@ -83,12 +83,14 @@ namespace O2.FluentSharp.VisualStudio
         public static void addVisualStudioReferencesForCompilation()
         {
             CompileEngine.DefaultReferencedAssemblies
-                            .add_OnlyNewItems(//needed for VS scripting                                              
-                                              "Microsoft.VisualStudio.Shell.10.0.dll",
+                            .add_OnlyNewItems(//needed for VS scripting                                                                                            
+                                              "Microsoft.VisualStudio.Shell.14.0.dll",
                                               "Microsoft.VisualStudio.Shell.Interop.dll",
                                               "Microsoft.VisualStudio.Shell.Interop.8.0.dll",
                                               "Microsoft.VisualStudio.Shell.Interop.9.0.dll",
                                               "Microsoft.VisualStudio.Shell.Interop.10.0.dll",
+                                              "Microsoft.VisualStudio.Shell.Interop.11.0.dll",
+                                              "Microsoft.VisualStudio.Shell.Interop.12.0.dll",
                                               "Microsoft.VisualStudio.Shell.UI.Internal.dll",
                                               "Microsoft.VisualStudio.OLE.Interop.dll",
                                               "Microsoft.VisualStudio.CommandBars.dll",
@@ -113,7 +115,7 @@ namespace O2.FluentSharp.VisualStudio
                                               "WindowsBase.dll",
                                               "System.Xaml.dll",
                                               //needed for FluentSharp ExtensionMethods
-                                              "O2.Platform.VisualStudio_2010.dll"
+                                              "O2.Platform.VisualStudio_2015.dll"
                                               );
             CompileEngine.DefaultUsingStatements
                             .add_OnlyNewItems("O2.FluentSharp.VisualStudio",

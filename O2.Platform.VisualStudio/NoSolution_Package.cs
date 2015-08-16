@@ -11,6 +11,8 @@ using Microsoft.VisualStudio.Shell.Interop;
 using System.Reflection;
 using FluentSharp.CoreLib.API;
 using FluentSharp.CoreLib;
+using FluentSharp.REPL.Utils;
+using FluentSharp.WinForms;
 
 namespace O2.FluentSharp.VisualStudio
 {
@@ -19,17 +21,17 @@ namespace O2.FluentSharp.VisualStudio
     [InstalledProductRegistration("O2 Platform VisualStudio", "See http://o2platform.com for more details", VisualStudio_2010.PackageGUID)]
     [ProvideToolWindow(typeof(WindowPane_WPF), MultiInstances = true, Style = VsDockStyle.Tabbed, Orientation = ToolWindowOrientation.Top, Window = EnvDTE.Constants.vsWindowKindOutput)]
     [ProvideToolWindow(typeof(WindowPane_WinForms), MultiInstances = true, Style = VsDockStyle.Tabbed, Orientation = ToolWindowOrientation.Top, Window = EnvDTE.Constants.vsWindowKindSolutionExplorer)]
-//    [ProvideAutoLoad(UIContextGuids80.NoSolution)]              // ensures this gets called on VisualStudio start
+    [ProvideAutoLoad(UIContextGuids80.NoSolution)]              // ensures this gets called on VisualStudio start
     public class NoSolution_Package : Package
     {
 
         public NoSolution_Package()
         {
-			O2ConfigSettings.O2Version += "_VS2010";
+			O2ConfigSettings.O2Version += "_VS2015";
 			PublicDI.config = new KO2Config();
 
             //open.scriptEditor();
-			//open.logViewer();			
+			open.logViewer().parentForm().minimize();			
         }
 
         /*public void showErrorInOutputWindow(Exception exToShow)
@@ -75,7 +77,7 @@ namespace O2.FluentSharp.VisualStudio
                 {
                     if (Control.ModifierKeys == Keys.Shift)
                         VisualStudio_O2_Utils.open_LogViewer();
-					
+
                     populateDefaultVSComObjects();
                     VisualStudio_2010.Initialized = true;                    
 

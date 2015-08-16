@@ -16,6 +16,7 @@ VisualStudio_2010.on_DocumentSaved.clear().add(
 						textArea.insert_Line("Compile Failed").pink();
 				});
 
-//O2File:E:\O2_V4\O2.FluentSharp\O2.FluentSharp.VisualStudio_2010\ExtensionMethods\VisualStudio_2010_ExtensionMethods.cs</SourceCode>
+// //O2File:E:\O2_V4\O2.FluentSharp\O2.FluentSharp.VisualStudio_2010\ExtensionMethods\VisualStudio_2010_ExtensionMethods.cs
+</SourceCode>
   <ReferencedAssemblies />
 </H2>
